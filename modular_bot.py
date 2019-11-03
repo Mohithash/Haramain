@@ -128,7 +128,7 @@ def main():
             listsui.BOT: [CallbackQueryHandler(listsui.button_bot)]
 			
         },
-        fallbacks=[CommandHandler('cancel', cancel)]
+        fallbacks=[CommandHandler('start', listsui.start)]
     )
     dispatcher.add_handler(channelAdmin_handler)
     dispatcher.add_handler(listingfun_handler)
